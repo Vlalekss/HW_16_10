@@ -15,7 +15,7 @@ public class DriverHelper {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-//        Configuration.holdBrowserOpen = true;
+
 
         if(JENKINS) {
             Configuration.timeout = 10000;
